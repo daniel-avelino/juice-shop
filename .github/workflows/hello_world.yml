@@ -19,7 +19,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   hello-world-ubuntu:
-    name: Hello World Ubuntu
+    name: Hello world Ubuntu
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -40,13 +40,12 @@ jobs:
           echo test, and deploy your project.
           
   hello-world-windows:
-    name: Hello World Windows
-    needs: [hello-world-ubuntu]
+    name: Hello world Windows
     runs-on: windows-latest
     
     steps:
       - name: Print Hello World Windows
-        run: echo 'Hello world rodando no windows'
+        run: echo 'Hello world rodando no Windows'
         
   hello-world-macos:
     name: Hello world MacOS
